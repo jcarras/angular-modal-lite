@@ -1,3 +1,8 @@
+/* AngularJS Modal Lite v0.0.1
+ * Author: Joel Carras
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
 var dialogModule = angular.module('modal', []);
 
 dialogModule.factory('modal', function ($document, $http, $templateCache, $controller, $rootScope, $compile) {
