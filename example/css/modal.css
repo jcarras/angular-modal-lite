@@ -1,0 +1,41 @@
+
+.modal-lite {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity:1;  /* make things invisible upon start */
+    -webkit-animation: fadeIn .1s; /* Safari 4+ */
+    -moz-animation:   fadeIn .1s; /* Fx 5+ */
+    -o-animation: fadeIn .1s; /* Opera 12+ */
+    animation: fadeIn .1s; /* IE 10+ */
+}
+
+.modal-lite-content {
+    height: 400px;
+    width: 400px;
+    background: white;
+    z-index: 99;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.modal-lite-background {
+    opacity: .5;
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
